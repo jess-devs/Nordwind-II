@@ -1,0 +1,2 @@
+# ClickOnce firma los bytes exactos: git no debe convertir saltos de l?nea.
+launcher/** -text
