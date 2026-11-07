@@ -3,8 +3,8 @@
 # v1.0.0.13
 
 - Con 6 GB de RAM o más para el juego, Minecraft arranca con ZGC generacional (-XX:+UseZGC -XX:+ZGenerational).
-- Se quita vaciando "Argumentos de Java" en Ajustes, y el launcher lo recuerda.
-- Ajustes avisa si los argumentos de Java traen dos recolectores de memoria.
+- Se quita vaciando "Parámetros de Java" en Ajustes, y el launcher lo recuerda.
+- Ajustes avisa si los parámetros de Java traen dos recolectores de memoria.
 
 # v1.0.0.12
 
