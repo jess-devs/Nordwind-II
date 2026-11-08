@@ -24,7 +24,6 @@
       "reason": "Lo que más memoria consume en el cliente. El index lo marca como requerido en servidor, pero el cliente debería poder entrar sin él. PROBAR antes de publicar." }
   ],
   "optional": [
-    { "name": "Iris",                     "modrinthId": "YL57xq9U", "pattern": "iris-*.jar",                  "reason": "Solo sirve para shaders. Desactivar solo si ningún mod activo depende de él." },
     { "name": "Highlighter",              "modrinthId": "cVNW5lr6", "pattern": "Highlighter-*.jar",           "reason": "Resalta items nuevos, muy ligero" }
   ],
   "neverDisable": [
