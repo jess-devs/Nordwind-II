@@ -1,0 +1,61 @@
+{
+  "version": 1,
+  "packVersion": "1.2.2",
+  "description": "Perfil de bajos recursos de Nordwind II: mods cosméticos de cliente que se desactivan y configs ligeras.",
+  "disable": [
+    { "name": "Camera Overhaul",          "modrinthId": "m0oRwcZx", "pattern": "CameraOverhaul-*.jar",        "reason": "Animación de cámara" },
+    { "name": "Sway",                     "modrinthId": "Gj6Yce3v", "pattern": "sway-*.jar",                  "reason": "Balanceo de items y bloques" },
+    { "name": "Punchy",                   "modrinthId": "8aoMKplv", "pattern": "punchy-*.jar",                "reason": "Animaciones de combate" },
+    { "name": "Chat Animation",           "modrinthId": "DnNYdJsx", "pattern": "chatanimation-*.jar",         "reason": "Animación del chat" },
+    { "name": "Immersive UI",             "modrinthId": "9wv7LuMc", "pattern": "ImmersiveUI-*.jar",           "reason": "Efectos de interfaz" },
+    { "name": "3D Skin Layers",           "modrinthId": "zV5r3pPn", "pattern": "skinlayers3d-*.jar",          "reason": "Capas 3D de skins, coste notable de FPS con muchos jugadores" },
+    { "name": "Continuity",               "modrinthId": "1IjD5062", "pattern": "continuity-*.jar",            "reason": "Texturas conectadas" },
+    { "name": "A Good Place",             "modrinthId": "BwPeriwJ", "pattern": "a_good_place-*.jar",          "reason": "Animación de aparición de chunks" },
+    { "name": "Item Borders",             "modrinthId": "b1fMg6sH", "pattern": "ItemBorders-*.jar",           "reason": "Bordes de rareza en el inventario" },
+    { "name": "Chat Heads",               "modrinthId": "Wb5oqrBJ", "pattern": "chat_heads-*.jar",            "reason": "Cabezas en el chat" }
+  ],
+  "disableOverrideServerFlag": [
+    { "name": "Sound Physics Remastered", "modrinthId": "qyVF9oeo", "pattern": "sound-physics-remastered-*.jar", "reason": "Trazado de sonido, consume mucha CPU. Es de cliente aunque el index lo marque como requerido en servidor. PROBAR antes de publicar." }
+  ],
+  "toggles": [
+    { "id": "disableDistantHorizons", "label": "Desactivar Distant Horizons", "default": false,
+      "name": "Distant Horizons", "modrinthId": "uCdwusMi", "pattern": "DistantHorizons-*.jar",
+      "overrideServerFlag": true,
+      "reason": "Lo que más memoria consume en el cliente. El index lo marca como requerido en servidor, pero el cliente debería poder entrar sin él. PROBAR antes de publicar." }
+  ],
+  "optional": [
+    { "name": "Iris",                     "modrinthId": "YL57xq9U", "pattern": "iris-*.jar",                  "reason": "Solo sirve para shaders. Desactivar solo si ningún mod activo depende de él." },
+    { "name": "Highlighter",              "modrinthId": "cVNW5lr6", "pattern": "Highlighter-*.jar",           "reason": "Resalta items nuevos, muy ligero" }
+  ],
+  "neverDisable": [
+    "sodium", "sodium-extra", "reeses-sodium-options", "chloride", "ImmediatelyFast", "entityculling",
+    "moreculling", "BadOptimizations", "AsyncParticles", "fastchestrevived", "NeoForgeGGTU",
+    "watermedia", "watermedia_platform_extension", "athena", "fusion", "MossyLib", "libIPN", "gnetum",
+    "CrashAssistant", "fast-ip-ping", "diorama", "ShoulderSurfing", "Prism", "Searchables",
+    "distraction_free_recipes", "Resourcify", "dynamiccrosshair", "cwb"
+  ],
+  "configs": {
+    "options.txt": {
+      "renderDistance": "6",
+      "simulationDistance": "6",
+      "particles": "2",
+      "graphicsMode": "0",
+      "renderClouds": "\"false\"",
+      "biomeBlendRadius": "0",
+      "mipmapLevels": "0",
+      "entityShadows": "false",
+      "entityDistanceScaling": "0.75"
+    },
+    "config/DistantHorizons.toml": {
+      "lodChunkRenderDistanceRadius": "64",
+      "horizontalQuality": "\"LOW\"",
+      "numberOfThreads": "1",
+      "threadRunTimeRatio": "\"0.25\""
+    }
+  },
+  "jvm": {
+    "gc": "G1",
+    "args": "-XX:+UseG1GC -XX:+ParallelRefProcEnabled -XX:MaxGCPauseMillis=40 -XX:+UnlockExperimentalVMOptions -XX:+DisableExplicitGC -XX:G1NewSizePercent=20 -XX:G1MaxNewSizePercent=40 -XX:G1HeapRegionSize=16M -XX:G1ReservePercent=20 -XX:InitiatingHeapOccupancyPercent=15",
+    "reserveForSystemGB": 3
+  }
+}
