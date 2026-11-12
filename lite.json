@@ -62,6 +62,12 @@
       "modrinthId": "Wb5oqrBJ",
       "pattern": "chat_heads-*.jar",
       "reason": "Cabezas en el chat"
+    },
+    {
+      "name": "Interactive Foliage",
+      "modrinthId": "ba5MV2CF",
+      "pattern": "mc2_interactivefoliage-*.jar",
+      "reason": "añade un movimiento natural a la hierba, las flores, los cultivos y otra vegetación."
     }
   ],
   "disableOverrideServerFlag": [
