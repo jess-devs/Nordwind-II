@@ -1,37 +1,126 @@
 {
   "version": 1,
   "packVersion": "1.2.2",
-  "description": "Perfil de bajos recursos de Nordwind II: mods cosméticos de cliente que se desactivan y configs ligeras.",
+  "description": "Perfil de bajos recursos de Nordwind II.",
   "disable": [
-    { "name": "Camera Overhaul",          "modrinthId": "m0oRwcZx", "pattern": "CameraOverhaul-*.jar",        "reason": "Animación de cámara" },
-    { "name": "Sway",                     "modrinthId": "Gj6Yce3v", "pattern": "sway-*.jar",                  "reason": "Balanceo de items y bloques" },
-    { "name": "Punchy",                   "modrinthId": "8aoMKplv", "pattern": "punchy-*.jar",                "reason": "Animaciones de combate" },
-    { "name": "Chat Animation",           "modrinthId": "DnNYdJsx", "pattern": "chatanimation-*.jar",         "reason": "Animación del chat" },
-    { "name": "Immersive UI",             "modrinthId": "9wv7LuMc", "pattern": "ImmersiveUI-*.jar",           "reason": "Efectos de interfaz" },
-    { "name": "3D Skin Layers",           "modrinthId": "zV5r3pPn", "pattern": "skinlayers3d-*.jar",          "reason": "Capas 3D de skins, coste notable de FPS con muchos jugadores" },
-    { "name": "Continuity",               "modrinthId": "1IjD5062", "pattern": "continuity-*.jar",            "reason": "Texturas conectadas" },
-    { "name": "A Good Place",             "modrinthId": "BwPeriwJ", "pattern": "a_good_place-*.jar",          "reason": "Animación de aparición de chunks" },
-    { "name": "Item Borders",             "modrinthId": "b1fMg6sH", "pattern": "ItemBorders-*.jar",           "reason": "Bordes de rareza en el inventario" },
-    { "name": "Chat Heads",               "modrinthId": "Wb5oqrBJ", "pattern": "chat_heads-*.jar",            "reason": "Cabezas en el chat" }
+    {
+      "name": "Camera Overhaul",
+      "modrinthId": "m0oRwcZx",
+      "pattern": "CameraOverhaul-*.jar",
+      "reason": "Animación de cámara"
+    },
+    {
+      "name": "Sway",
+      "modrinthId": "Gj6Yce3v",
+      "pattern": "sway-*.jar",
+      "reason": "Balanceo de items y bloques"
+    },
+    {
+      "name": "Punchy",
+      "modrinthId": "8aoMKplv",
+      "pattern": "punchy-*.jar",
+      "reason": "Animaciones de combate"
+    },
+    {
+      "name": "Chat Animation",
+      "modrinthId": "DnNYdJsx",
+      "pattern": "chatanimation-*.jar",
+      "reason": "Animación del chat"
+    },
+    {
+      "name": "Immersive UI",
+      "modrinthId": "9wv7LuMc",
+      "pattern": "ImmersiveUI-*.jar",
+      "reason": "Efectos de interfaz"
+    },
+    {
+      "name": "3D Skin Layers",
+      "modrinthId": "zV5r3pPn",
+      "pattern": "skinlayers3d-*.jar",
+      "reason": "Capas 3D de skins, coste notable de FPS con muchos jugadores"
+    },
+    {
+      "name": "Continuity",
+      "modrinthId": "1IjD5062",
+      "pattern": "continuity-*.jar",
+      "reason": "Texturas conectadas"
+    },
+    {
+      "name": "A Good Place",
+      "modrinthId": "BwPeriwJ",
+      "pattern": "a_good_place-*.jar",
+      "reason": "Animación de aparición de chunks"
+    },
+    {
+      "name": "Item Borders",
+      "modrinthId": "b1fMg6sH",
+      "pattern": "ItemBorders-*.jar",
+      "reason": "Bordes de rareza en el inventario"
+    },
+    {
+      "name": "Chat Heads",
+      "modrinthId": "Wb5oqrBJ",
+      "pattern": "chat_heads-*.jar",
+      "reason": "Cabezas en el chat"
+    }
   ],
   "disableOverrideServerFlag": [
-    { "name": "Sound Physics Remastered", "modrinthId": "qyVF9oeo", "pattern": "sound-physics-remastered-*.jar", "reason": "Trazado de sonido, consume mucha CPU. Es de cliente aunque el index lo marque como requerido en servidor. PROBAR antes de publicar." }
+    {
+      "name": "Sound Physics Remastered",
+      "modrinthId": "qyVF9oeo",
+      "pattern": "sound-physics-remastered-*.jar",
+      "reason": "Trazado de sonido, consume mucha CPU. Es de cliente aunque el index lo marque como requerido en servidor."
+    }
   ],
   "toggles": [
-    { "id": "disableDistantHorizons", "label": "Desactivar Distant Horizons", "default": false,
-      "name": "Distant Horizons", "modrinthId": "uCdwusMi", "pattern": "DistantHorizons-*.jar",
+    {
+      "id": "disableDistantHorizons",
+      "label": "Desactivar Distant Horizons",
+      "default": false,
+      "name": "Distant Horizons",
+      "modrinthId": "uCdwusMi",
+      "pattern": "DistantHorizons-*.jar",
       "overrideServerFlag": true,
-      "reason": "Lo que más memoria consume en el cliente. El index lo marca como requerido en servidor, pero el cliente debería poder entrar sin él. PROBAR antes de publicar." }
+      "reason": "Lo que más memoria consume en el cliente."
+    }
   ],
   "optional": [
-    { "name": "Highlighter",              "modrinthId": "cVNW5lr6", "pattern": "Highlighter-*.jar",           "reason": "Resalta items nuevos, muy ligero" }
+    {
+      "name": "Highlighter",
+      "modrinthId": "cVNW5lr6",
+      "pattern": "Highlighter-*.jar",
+      "reason": "Resalta items nuevos, muy ligero"
+    }
   ],
   "neverDisable": [
-    "sodium", "sodium-extra", "reeses-sodium-options", "chloride", "ImmediatelyFast", "entityculling",
-    "moreculling", "BadOptimizations", "AsyncParticles", "fastchestrevived", "NeoForgeGGTU",
-    "watermedia", "watermedia_platform_extension", "athena", "fusion", "MossyLib", "libIPN", "gnetum",
-    "CrashAssistant", "fast-ip-ping", "diorama", "ShoulderSurfing", "Prism", "Searchables",
-    "distraction_free_recipes", "Resourcify", "dynamiccrosshair", "cwb"
+    "sodium",
+    "sodium-extra",
+    "reeses-sodium-options",
+    "chloride",
+    "ImmediatelyFast",
+    "entityculling",
+    "moreculling",
+    "BadOptimizations",
+    "AsyncParticles",
+    "fastchestrevived",
+    "NeoForgeGGTU",
+    "watermedia",
+    "watermedia_platform_extension",
+    "athena",
+    "fusion",
+    "MossyLib",
+    "libIPN",
+    "gnetum",
+    "CrashAssistant",
+    "fast-ip-ping",
+    "diorama",
+    "ShoulderSurfing",
+    "Prism",
+    "Searchables",
+    "distraction_free_recipes",
+    "Resourcify",
+    "dynamiccrosshair",
+    "cwb"
   ],
   "configs": {
     "options.txt": {
