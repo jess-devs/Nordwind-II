@@ -1,5 +1,11 @@
 # Novedades de Nordwind II
 
+# v1.0.0.15
+
+- Si el launcher ya está abierto, abrirlo otra vez lo trae al frente en lugar de abrir otro.
+- Con Minecraft ya abierto, JUGAR avisa y ofrece cerrarlo en lugar de abrir un segundo juego.
+- Se corrigió el error "El proceso no puede obtener acceso al archivo" al abrir el launcher dos veces.
+
 # v1.0.0.14
 
 - Nuevo botón Perfil en Ajustes, con tres perfiles: Automático, Normal y Bajos recursos.
