@@ -1,5 +1,13 @@
 # Novedades de Nordwind II
 
+# v1.0.0.16
+
+- Los errores de la cuenta (sin Minecraft Java, sin perfil de Xbox o con demasiados intentos) dicen qué hacer en lugar de mostrar un código.
+- Cerrar la ventana de Microsoft al iniciar sesión ya no muestra un error.
+- Al abrir el launcher con la sesión guardada, la pantalla de inicio se ve mientras recupera tu sesión.
+- Si tienes internet pero no se encuentra un servidor del juego, el aviso dice cuál y sugiere cambiar el DNS.
+- Más errores dicen qué hacer: al guardar la Bitácora, al borrar los datos con Minecraft abierto y cuando falla la actualización del launcher.
+
 # v1.0.0.15
 
 - Si el launcher ya está abierto, abrirlo otra vez lo trae al frente en lugar de abrir otro.
