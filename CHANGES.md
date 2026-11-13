@@ -1,5 +1,12 @@
 # Novedades de Nordwind II
 
+# v1.0.0.17
+
+- La Bitácora, las Novedades, Ajustes y el Perfil de rendimiento aparecen enteros al abrirse, sin tirones.
+- La primera vez que abres Ajustes tarda lo mismo que las demás.
+- Los errores de JUGAR salen en español también en la Bitácora, con el mismo texto que el aviso.
+- El título del aviso de error de JUGAR dice qué falló en ese intento, no en uno anterior.
+
 # v1.0.0.16
 
 - Los errores de la cuenta (sin Minecraft Java, sin perfil de Xbox o con demasiados intentos) dicen qué hacer en lugar de mostrar un código.
