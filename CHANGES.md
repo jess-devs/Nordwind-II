@@ -1,5 +1,9 @@
 # Novedades de Nordwind II
 
+# v1.0.0.18
+
+- Corrección de errores de envío.
+
 # v1.0.0.17
 
 - La Bitácora, las Novedades, Ajustes y el Perfil de rendimiento aparecen enteros al abrirse, sin tirones.
