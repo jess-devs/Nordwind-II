@@ -1,6 +1,6 @@
 # Novedades de Nordwind II
 
-# v1.0.0.20
+# v1.0.0.21
 
 - Vuelven a aparecer los muñequitos que muestran quién está jugando en el servidor.
 
