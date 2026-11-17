@@ -1,5 +1,10 @@
 # Novedades de Nordwind II
 
+# v1.0.0.19
+
+- Si elegiste un tamaño para la ventana del juego, el launcher ya no se queda en COMPROBANDO y Ajustes vuelve a abrir.
+- Un error inesperado sale en el aviso del launcher y no en una ventana de Windows con detalles técnicos.
+
 # v1.0.0.18
 
 - Corrección de errores de envío.
