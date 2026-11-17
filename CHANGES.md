@@ -1,5 +1,9 @@
 # Novedades de Nordwind II
 
+# v1.0.0.20
+
+- Vuelven a aparecer los muñequitos que muestran quién está jugando en el servidor.
+
 # v1.0.0.19
 
 - Si elegiste un tamaño para la ventana del juego, el launcher ya no se queda en COMPROBANDO y Ajustes vuelve a abrir.
