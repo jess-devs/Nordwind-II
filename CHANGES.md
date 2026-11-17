@@ -4,6 +4,7 @@
 
 - Si elegiste un tamaño para la ventana del juego, el launcher ya no se queda en COMPROBANDO y Ajustes vuelve a abrir.
 - Un error inesperado sale en el aviso del launcher y no en una ventana de Windows con detalles técnicos.
+- Si Minecraft está abierto, "Borrar carpeta de juego y ajustes" ofrece cerrarlo primero en lugar de quedarse a medias.
 
 # v1.0.0.18
 
