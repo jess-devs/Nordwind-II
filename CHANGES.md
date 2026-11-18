@@ -1,5 +1,10 @@
 # Novedades de Nordwind II
 
+# v1.0.0.22
+
+- Cuando sale una versión nueva del modpack, el launcher pone al día las opciones del juego, la lista de servidores y la configuración de los mods. Lo que hayas cambiado en esos archivos se reemplaza por lo del modpack.
+- Si prefieres conservar tu configuración, marca "Conservar mi configuración al actualizar" en Ajustes. Con la casilla marcada no recibes los cambios de configuración del modpack.
+
 # v1.0.0.21
 
 - Vuelven a aparecer los muñequitos que muestran quién está jugando en el servidor.
