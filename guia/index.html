@@ -19,7 +19,10 @@
 <a class="skip" href="#main">Ir al contenido</a>
 
 <!-- Capa 1: video de fondo -->
-<video class="layer-video" src="assets/background.mp4" autoplay muted loop playsinline aria-hidden="true" tabindex="-1"></video>
+<video class="layer-video" autoplay muted loop playsinline preload="auto" aria-hidden="true" tabindex="-1">
+  <source src="assets/background.webm" type="video/webm; codecs=vp9">
+  <source src="assets/background.mp4" type="video/mp4">
+</video>
 <!-- Capa 2: velo para legibilidad -->
 <div class="layer-shade" aria-hidden="true"></div>
 
