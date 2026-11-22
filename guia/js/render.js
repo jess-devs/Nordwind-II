@@ -19,13 +19,11 @@ function videoHtml([id,title,lang,channel]){
     `<span class="cap"${en?' lang="en"':""}>${esc(title)}<em class="ch"> ${esc(channel)}${en?" · en inglés":""}</em>${NEWTAB}</span></a></li>`;
 }
 
-// Cada tarjeta lleva un view-transition-name único para que el navegador
-// la siga y la mueva al filtrar o buscar (ver css/transitions.css).
 function modHtml(m){
   const vids=m.v.length
     ? `<ul class="vids">${m.v.map(videoHtml).join("")}</ul>`
     : "";
-  return `<article class="mod vt-item" data-c="${m.c}" style="view-transition-name:mod-${M.indexOf(m)}">`+
+  return `<article class="mod" data-c="${m.c}">`+
     `<h3>${m.i?`<img class="mod-icon" src="${m.i}" alt="" width="28" height="28" loading="lazy">`:""}<span>${esc(m.n)}</span></h3><p class="mod-desc">${esc(m.d)}</p>`+
     `<ul class="links">${m.l.map(linkHtml).join("")}</ul>${vids}</article>`;
 }
@@ -38,6 +36,6 @@ function matches(cat,text){
 
 function listHtml(groups){
   return groups.map(g=>
-    `<div class="cathead vt-item" data-c="${g.k}" style="view-transition-name:cat-${g.k}"><h2>${esc(g.name)}</h2></div>`+
+    `<div class="cathead" data-c="${g.k}"><h2>${esc(g.name)}</h2></div>`+
     g.items.map(modHtml).join("")).join("");
 }

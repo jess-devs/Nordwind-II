@@ -1,32 +1,17 @@
-/* View Transitions: animación al filtrar o buscar tarjetas */
+/* View Transitions: al filtrar o buscar, la lista nueva aparece con un desvanecido corto.
+   La lista anterior desaparece al instante, así que nunca hay dos textos encimados,
+   ni movimiento, ni desenfoque. */
 
-/* Solo se animan los elementos con nombre; la página y el video de fondo
-   no se congelan y los controles siguen respondiendo. */
+/* Solo se anima la lista; la página y el video de fondo no se congelan. */
 :root{view-transition-name:none}
 ::view-transition{pointer-events:none}
+#list{view-transition-name:list}
 
-.vt-item{view-transition-class:vt-item}
-
-::view-transition-group(.vt-item){
-  animation-duration:.35s;
-  animation-timing-function:ease-in-out;
-}
-
-/* Elemento nuevo: entra desde un poco más abajo. */
-::view-transition-new(.vt-item):only-child{
-  animation-name:vt-in;
-  animation-timing-function:ease-out;
-}
-/* Elemento que ya no está: se desvanece. */
-::view-transition-old(.vt-item):only-child{
-  animation-name:vt-out;
-  animation-timing-function:ease-in;
-}
-@keyframes vt-in{from{opacity:0;translate:0 16px}}
-@keyframes vt-out{to{opacity:0;scale:.97}}
+::view-transition-group(list){animation:none}
+::view-transition-old(list){display:none}
+::view-transition-new(list){animation:vt-in .15s ease-out}
+@keyframes vt-in{from{opacity:.35}}
 
 @media (prefers-reduced-motion:reduce){
-  ::view-transition-group(*),
-  ::view-transition-old(*),
-  ::view-transition-new(*){animation:none!important}
+  ::view-transition-new(list){animation:none}
 }

@@ -16,10 +16,6 @@
     buttons.forEach(b=>{min&&wide.matches?b.title=b.querySelector("span:nth-child(2)").textContent:b.removeAttribute("title")});
     if(remember&&wide.matches){try{localStorage.setItem(KEY,min?"1":"0")}catch(e){}}
   }
-  // Con la columna minimizada, el buscador es solo un ícono: al pulsarlo se expande y se puede escribir.
-  document.querySelector(".search").addEventListener("click",()=>{
-    if(shell.hasAttribute("data-min")&&wide.matches){setMin(false,true);q.focus()}
-  });
   // Angosto: el menú de categorías abre a pantalla completa (el resto de la página queda inerte).
   const menuBtn=$("menuBtn"),menuClose=$("menuClose"),panel=$("panel"),mainEl=$("main");
   function setMenu(open){
