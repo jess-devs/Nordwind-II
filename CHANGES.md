@@ -1,5 +1,9 @@
 # Novedades de Nordwind II
 
+# v1.0.0.23
+
+- Corrección de errores de envío.
+
 # v1.0.0.22
 
 - Cuando sale una versión nueva del modpack, el launcher pone al día las opciones del juego, la lista de servidores y la configuración de los mods. Lo que hayas cambiado en esos archivos se reemplaza por lo del modpack.
