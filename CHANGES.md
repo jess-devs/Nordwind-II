@@ -1,5 +1,17 @@
 # Novedades de Nordwind II
 
+# v1.0.0.24
+
+- Si falta un archivo del modpack (por ejemplo, porque lo quitó el antivirus), JUGAR lo vuelve a descargar sin esperar a una versión nueva.
+- Si un mod que el perfil desactivó no se pudo reactivar porque otro programa lo tenía abierto, el launcher lo recuerda y lo reactiva en el siguiente JUGAR.
+- Si se corta la luz mientras el launcher guarda options.txt o el estado del perfil, el archivo ya no se pierde.
+- Si otro programa tiene abierto un mod del perfil, la Bitácora lo dice en español y explica qué hacer.
+- La Bitácora explica con palabras más claras qué mods deja activos el perfil Bajos recursos y por qué.
+- La casilla del inicio de sesión ahora se llama "Recordar la sesión", y la de Ajustes, "Conservar la configuración al actualizar".
+- La sesión recordada guarda menos datos en tu equipo.
+- Ajustes revisa mejor los argumentos de Java.
+- Corrección de errores de envío.
+
 # v1.0.0.23
 
 - Corrección de errores de envío.
