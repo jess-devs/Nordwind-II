@@ -10,23 +10,11 @@
     </startup>
     <userSettings>
         <NordwindLauncher.Properties.Settings>
-            <setting name="username" serializeAs="String">
-                <value>none</value>
-            </setting>
             <setting name="remembermeAct" serializeAs="String">
                 <value>False</value>
             </setting>
             <setting name="isPremium" serializeAs="String">
                 <value>False</value>
-            </setting>
-            <setting name="accessToken" serializeAs="String">
-                <value />
-            </setting>
-            <setting name="refreshToken" serializeAs="String">
-                <value />
-            </setting>
-            <setting name="uuid" serializeAs="String">
-                <value />
             </setting>
         </NordwindLauncher.Properties.Settings>
     </userSettings>
