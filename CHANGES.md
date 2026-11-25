@@ -1,5 +1,10 @@
 # Novedades de Nordwind II
 
+# v1.0.0.25
+
+- Si Windows no deja guardar los ajustes del launcher, ya no te quedas trabado en "Recuperando tu sesión…": entras igual, aunque la sesión no quede recordada.
+- Si GitHub recibe demasiadas consultas desde tu red, el aviso dice que esperes unos minutos en lugar de pedirte que revises tu internet.
+
 # v1.0.0.24
 
 - Si falta un archivo del modpack (por ejemplo, porque lo quitó el antivirus), JUGAR lo vuelve a descargar sin esperar a una versión nueva.
