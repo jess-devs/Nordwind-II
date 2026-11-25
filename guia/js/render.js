@@ -12,9 +12,9 @@ function linkHtml([label,url]){
   return `<li><a${isOfficial(label)?' class="is-official"':""} href="${url}" target="_blank" rel="noopener noreferrer">${esc(label)}${NEWTAB}</a></li>`;
 }
 
-function videoHtml([id,title,lang,channel]){
+function videoHtml([id,title,lang,channel,start]){
   const en=lang==="EN";
-  return `<li><a class="vid" href="https://www.youtube.com/watch?v=${id}" target="_blank" rel="noopener noreferrer">`+
+  return `<li><a class="vid" href="https://www.youtube.com/watch?v=${id}${start?`&t=${start}s`:""}" target="_blank" rel="noopener noreferrer">`+
     `<span class="thumb"><img loading="lazy" alt="" src="https://i.ytimg.com/vi/${id}/mqdefault.jpg"></span>`+
     `<span class="cap"${en?' lang="en"':""}>${esc(title)}<em class="ch"> ${esc(channel)}${en?" · en inglés":""}</em>${NEWTAB}</span></a></li>`;
 }
